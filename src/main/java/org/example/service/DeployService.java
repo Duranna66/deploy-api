@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class DeployService {
     @SneakyThrows
     public Response startDeployScript(String name) {
-        String path = "/home/vsevolod/deploy/deploy/deploy-api/src/main/java/org/example/scripts/deploy.sh";
+        String path = "/home/vsevolod/deploy/deploy-api/src/main/java/org/example/scripts/deploy.sh"
         ProcessBuilder pb = new ProcessBuilder(path, name);
         Process p = pb.start();
         p.waitFor();
