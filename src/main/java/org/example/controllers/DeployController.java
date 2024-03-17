@@ -1,7 +1,7 @@
 package org.example.controllers;
 
 import lombok.AllArgsConstructor;
-import org.example.controllers.service.DeployService;
+import org.example.service.DeployService;
 import org.example.responses.Response;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
